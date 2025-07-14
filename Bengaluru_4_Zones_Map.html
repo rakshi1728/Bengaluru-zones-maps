@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_add4e637aafadd04165b3d3d94451b2c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_add4e637aafadd04165b3d3d94451b2c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_add4e637aafadd04165b3d3d94451b2c = L.map(
+                "map_add4e637aafadd04165b3d3d94451b2c",
+                {
+                    center: [12.9716, 77.5946],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ed7f0228f72ca1b9111f4b729c597e5a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_add4e637aafadd04165b3d3d94451b2c);
+        
+    
+            var circle_c65b9f894d6fddaa175907a8b377141e = L.circle(
+                [13.1516, 77.4146],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_add4e637aafadd04165b3d3d94451b2c);
+        
+    
+        var popup_30c56a181aabcd2265a8fea425f3a927 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba9d614c9451b7d797105097957fe81a = $(`<div id="html_ba9d614c9451b7d797105097957fe81a" style="width: 100.0%; height: 100.0%;">Zone A: Yelahanka (Northwest Bengaluru)</div>`)[0];
+            popup_30c56a181aabcd2265a8fea425f3a927.setContent(html_ba9d614c9451b7d797105097957fe81a);
+        
+
+        circle_c65b9f894d6fddaa175907a8b377141e.bindPopup(popup_30c56a181aabcd2265a8fea425f3a927)
+        ;
+
+        
+    
+    
+            var marker_2c27b995c420b27dd346253ee40d9913 = L.marker(
+                [13.1516, 77.4146],
+                {}
+            ).addTo(map_add4e637aafadd04165b3d3d94451b2c);
+        
+    
+            var icon_861dfcf997647fc3ff98bb3a28111a15 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_2c27b995c420b27dd346253ee40d9913.setIcon(icon_861dfcf997647fc3ff98bb3a28111a15);
+        
+    
+        var popup_e1d655308de359412b4e10c1004c1016 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3e3de208e7c24ac86d6bfef6cecd6a54 = $(`<div id="html_3e3de208e7c24ac86d6bfef6cecd6a54" style="width: 100.0%; height: 100.0%;">Zone A: Yelahanka (Northwest Bengaluru)</div>`)[0];
+            popup_e1d655308de359412b4e10c1004c1016.setContent(html_3e3de208e7c24ac86d6bfef6cecd6a54);
+        
+
+        marker_2c27b995c420b27dd346253ee40d9913.bindPopup(popup_e1d655308de359412b4e10c1004c1016)
+        ;
+
+        
+    
+    
+            marker_2c27b995c420b27dd346253ee40d9913.bindTooltip(
+                `<div>
+                     Zone A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d9af4e602a8256d8844b237a1b10982a = L.circle(
+                [13.1516, 77.7746],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_add4e637aafadd04165b3d3d94451b2c);
+        
+    
+        var popup_33dbb97802c9ae00ee070d739f0f8871 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9ef080df4d51e8612ba23c75b7b62271 = $(`<div id="html_9ef080df4d51e8612ba23c75b7b62271" style="width: 100.0%; height: 100.0%;">Zone B: Whitefield (Northeast Bengaluru)</div>`)[0];
+            popup_33dbb97802c9ae00ee070d739f0f8871.setContent(html_9ef080df4d51e8612ba23c75b7b62271);
+        
+
+        circle_d9af4e602a8256d8844b237a1b10982a.bindPopup(popup_33dbb97802c9ae00ee070d739f0f8871)
+        ;
+
+        
+    
+    
+            var marker_918070888f4ebd35f395d0ba2bf45cd5 = L.marker(
+                [13.1516, 77.7746],
+                {}
+            ).addTo(map_add4e637aafadd04165b3d3d94451b2c);
+        
+    
+            var icon_c0464ce4b37f184ba293ab6760ed849e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_918070888f4ebd35f395d0ba2bf45cd5.setIcon(icon_c0464ce4b37f184ba293ab6760ed849e);
+        
+    
+        var popup_9105cb3befc28dbd02bd8c79b65caec5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a32121aa4cad4e35ca02d80965b2b322 = $(`<div id="html_a32121aa4cad4e35ca02d80965b2b322" style="width: 100.0%; height: 100.0%;">Zone B: Whitefield (Northeast Bengaluru)</div>`)[0];
+            popup_9105cb3befc28dbd02bd8c79b65caec5.setContent(html_a32121aa4cad4e35ca02d80965b2b322);
+        
+
+        marker_918070888f4ebd35f395d0ba2bf45cd5.bindPopup(popup_9105cb3befc28dbd02bd8c79b65caec5)
+        ;
+
+        
+    
+    
+            marker_918070888f4ebd35f395d0ba2bf45cd5.bindTooltip(
+                `<div>
+                     Zone B
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9f810886b5b2448ed5cecd886935b2e9 = L.circle(
+                [12.7916, 77.4146],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_add4e637aafadd04165b3d3d94451b2c);
+        
+    
+        var popup_34a6b65f09c18df08a772b6849974f82 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d7050e70ecd654b4bc70d41cebe59053 = $(`<div id="html_d7050e70ecd654b4bc70d41cebe59053" style="width: 100.0%; height: 100.0%;">Zone C: Kengeri (Southwest Bengaluru)</div>`)[0];
+            popup_34a6b65f09c18df08a772b6849974f82.setContent(html_d7050e70ecd654b4bc70d41cebe59053);
+        
+
+        circle_9f810886b5b2448ed5cecd886935b2e9.bindPopup(popup_34a6b65f09c18df08a772b6849974f82)
+        ;
+
+        
+    
+    
+            var marker_78b6cd0bb6cd25ea106230b1f3f7e4b3 = L.marker(
+                [12.7916, 77.4146],
+                {}
+            ).addTo(map_add4e637aafadd04165b3d3d94451b2c);
+        
+    
+            var icon_f7e8748324e39acc0ecb35399f547876 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_78b6cd0bb6cd25ea106230b1f3f7e4b3.setIcon(icon_f7e8748324e39acc0ecb35399f547876);
+        
+    
+        var popup_98c481271dfe6df4c5f07cc5bcfeb685 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7fd694dc4193b5bd4abbb4b0105dff9c = $(`<div id="html_7fd694dc4193b5bd4abbb4b0105dff9c" style="width: 100.0%; height: 100.0%;">Zone C: Kengeri (Southwest Bengaluru)</div>`)[0];
+            popup_98c481271dfe6df4c5f07cc5bcfeb685.setContent(html_7fd694dc4193b5bd4abbb4b0105dff9c);
+        
+
+        marker_78b6cd0bb6cd25ea106230b1f3f7e4b3.bindPopup(popup_98c481271dfe6df4c5f07cc5bcfeb685)
+        ;
+
+        
+    
+    
+            marker_78b6cd0bb6cd25ea106230b1f3f7e4b3.bindTooltip(
+                `<div>
+                     Zone C
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b0fc407fec6ca64ebea18278cefb6e1f = L.circle(
+                [12.7916, 77.7746],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_add4e637aafadd04165b3d3d94451b2c);
+        
+    
+        var popup_34894365fd05018a3031ee8fc1697c95 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_724028ae257a1a1cc963437210ae67d6 = $(`<div id="html_724028ae257a1a1cc963437210ae67d6" style="width: 100.0%; height: 100.0%;">Zone D: Electronic City (Southeast Bengaluru)</div>`)[0];
+            popup_34894365fd05018a3031ee8fc1697c95.setContent(html_724028ae257a1a1cc963437210ae67d6);
+        
+
+        circle_b0fc407fec6ca64ebea18278cefb6e1f.bindPopup(popup_34894365fd05018a3031ee8fc1697c95)
+        ;
+
+        
+    
+    
+            var marker_a8e446873691a184c433687db9f4f842 = L.marker(
+                [12.7916, 77.7746],
+                {}
+            ).addTo(map_add4e637aafadd04165b3d3d94451b2c);
+        
+    
+            var icon_fb290d8b28e98ec8da40f3f29812fb29 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_a8e446873691a184c433687db9f4f842.setIcon(icon_fb290d8b28e98ec8da40f3f29812fb29);
+        
+    
+        var popup_c750e607a4bbaebe9720db1b083aca89 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd08536b99180932d83e478f80636b20 = $(`<div id="html_cd08536b99180932d83e478f80636b20" style="width: 100.0%; height: 100.0%;">Zone D: Electronic City (Southeast Bengaluru)</div>`)[0];
+            popup_c750e607a4bbaebe9720db1b083aca89.setContent(html_cd08536b99180932d83e478f80636b20);
+        
+
+        marker_a8e446873691a184c433687db9f4f842.bindPopup(popup_c750e607a4bbaebe9720db1b083aca89)
+        ;
+
+        
+    
+    
+            marker_a8e446873691a184c433687db9f4f842.bindTooltip(
+                `<div>
+                     Zone D
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
